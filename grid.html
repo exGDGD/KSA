@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		 #grid{
+		 	display : grid;
+		 	grid-template-columns:  150px 1fr;
+		 }
+		 .saw{
+		 	font-size: 20px;
+		 }
+		 h1{
+		 	font-size: 40px; text-align: center;
+		 	border-bottom: 1px solid black; 
+		 	margin:0;
+		 	padding : 20px
+		 }
+		 #grid ol{
+		 	width: 100px;
+		 	border-right: 1px solid black;
+		 	margin: 0;
+		 	padding : 20px 
+		 }
+		 @media(max-width: 800px){
+		 	#list{
+		 		display:block;
+		 	}
+		 	ol{
+		 		border-right: none;
+		 	}
+
+		 }
+		</style>
+	</head>
+	<body>
+		<h1>IDEV</h1>
+		<div id="grid">
+			<ol>
+				<li><a href="1.html" class="saw">mara</a></li>
+				<li><a href="2.html" class="saw">tteok</a></li>
+				<li>hamburger</li>
+			</ol>
+			<div id = list>navigation<br>
+			article
+			</div>
+		</div>
+	</body>
+</html>
