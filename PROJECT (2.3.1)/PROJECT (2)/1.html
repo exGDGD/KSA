@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+	<head>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="style.css">
+		<script>
+
+
+			function randomitem(){
+				var menulist = new Array('MENU1','MENU2','MENU3');
+				var recom_list = $("#recommended");
+				var randommenu = menulist[Math.floor(Math.random()*menulist.length)];
+				recom_list.append("<li>"+randommenu+"</li>");
+
+
+
+				}
+	 </script>
+	</head>
+	<body>
+		<h1>한과영 배달 맛집 공유</h1>
+		<div class="list">
+			<ol id="list">
+				<li><h2><a href="1.html" >추천 맛집</a></h2></li>
+				<li><h2><a href="2.html" >종류별 맛집</a></h2></li>
+			</ol>
+			<div id="recommend">
+				<ul id="recommended">
+
+				</ul>
+				<input type='button' value='recommend' onclick='randomitem()'/>
+
+
+			</div>
+
+		</div>
+	</body>
+</html>
